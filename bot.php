@@ -2,7 +2,7 @@
 
 $data = json_decode(file_get_contents('php://input'), TRUE);
 file_put_contents('file.txt', '$data: ' . print_r($data, 1) . "\n", FILE_APPEND);
-define('TOKEN', '5165014793:AAGuQ5vswTJP_BvwBXETYm1lcIMvGGe_MGM');
+define('TOKEN', '');
 
 $data = $data['callback_query'] ? $data['callback_query'] : $data['message'];
 
